@@ -1,0 +1,138 @@
+.supContent{
+    height: 100vh;
+}
+
+.content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.p1{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+.p1 header{
+    display: inline-block;
+    width: 5rem;
+    
+}
+.link{
+    width: 5rem;
+
+}
+
+.supContent header{
+    display: flex;
+    justify-content:flex-start;
+}
+
+.supContent img{
+    height: 2rem;
+    width: 2rem;
+    margin: 0;
+}
+.p1 h1{
+    color: #055A87;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    font-size: 6rem;
+}
+.email{
+    color: black;
+    border: 2px solid #051933;
+    border-radius: 15px;
+    width: 20rem;
+    height: 2rem;
+    margin-bottom: 2rem;
+}
+
+.senha{
+    color: black;
+    border: 2px solid #051933;
+    border-radius: 15px;
+    width: 20rem;
+    height: 2rem;
+    margin-bottom: 2rem;
+}
+.btnLogin:hover{
+    background-color: #051933;
+    color: #FFFFFF;
+
+}
+
+.p1 button{
+    background-color: #6FD9D5;
+    color: #055A87;
+    width: 10rem;
+    height: 3rem;
+    border-radius: 25px;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.p1 form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.p2{
+    background-color: #6FD9D5;
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.p2 img{
+    margin: 0;
+    height: 25rem;
+    width: 20rem;
+}
+
+.p2 h1{
+    color: #FFFFFF;
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.voltar{
+    margin: 1rem auto;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #051933;
+    width: 10rem;
+    height: 2rem;
+    border-radius: 25px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    height: 2.5rem;
+    background-color: #051933;
+    font-size: 1.25rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+}

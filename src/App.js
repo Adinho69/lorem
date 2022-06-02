@@ -1,25 +1,24 @@
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Cadastro from './components/Cadastro';
+import Home from './components/Home';
+import Login from './components/Login';
+import { GlobalStorage } from './customHooks/GlobalContext';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <GlobalStorage>
+        <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home/>} />
+          <Route path='/login' element={<Login/>} />
+          <Route path='/cadastro' element={<Cadastro/>}/>
+        </Routes>
+        </BrowserRouter>
+      </GlobalStorage>
     </div>
   );
-}
-
+};
 export default App;
